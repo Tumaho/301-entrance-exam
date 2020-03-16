@@ -1,0 +1,62 @@
+body{
+    background-color: #eee;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: bold; */
+    font-size: large;
+}
+header{
+    background-color: #6d8adbc7;
+    min-height: 100px;
+    position: relative;
+    top: 0px;
+}
+header h1{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30px;
+    
+}
+form{
+    width: 30%;
+    background-color: #dae4ff;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+}
+form p{
+    text-align: center;
+    font-size: larger;
+}
+#formDiv{
+    padding-left: 80px;
+    padding-top: 64px;
+   
+}
+.inputs{
+    width: 90%;
+    height: 40px;
+}
+#orderList{
+    float: right;
+    position: relative;
+    right: 388px;
+    bottom: 270px;
+}
+#orderList ol li{
+    padding-bottom: 56px;
+}
+#submitResult{
+    background-color: #6d8adbc7;
+    float: right;
+    color: white;
+    height: 30px;
+    
+}
+#submitResult:hover{
+    background-color: aqua;
+    
+}
