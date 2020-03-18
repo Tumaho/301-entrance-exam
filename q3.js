@@ -47,7 +47,7 @@ submitt.addEventListener('click', function (event) {
 
 });
 
-var newArray = [];
+
 function setData() {
     var userData = JSON.stringify(arrayOfObjects);
     localStorage.setItem('obada', userData);
@@ -56,13 +56,13 @@ function setData() {
 function getData() {
     var userData = localStorage.getItem('obada');
     if (userData) {
-        newArray = JSON.parse(userData);
+        arrayOfObjects = JSON.parse(userData);
 
         
-        for(var i=0; i<newArray.length;i++){
+        for(var i=0; i<arrayOfObjects.length;i++){
         var liE = document.createElement('li');
         theList.appendChild(liE);
-        liE.textContent = `${newArray[i].act} at ${newArray[i].actDate}`;}
+        liE.textContent = `${arrayOfObjects[i].act} at ${arrayOfObjects[i].actDate}`;}
     }
 }
 getData();
